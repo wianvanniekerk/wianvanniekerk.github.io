@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/wianvanniekerk.github.io/static/css/main.2606aa4f.css",
+    "main.css": "/wianvanniekerk.github.io/static/css/main.bab64f9c.css",
     "main.js": "/wianvanniekerk.github.io/static/js/main.ee70e5bf.js",
     "static/js/787.4682e272.chunk.js": "/wianvanniekerk.github.io/static/js/787.4682e272.chunk.js",
     "index.html": "/wianvanniekerk.github.io/index.html",
-    "main.2606aa4f.css.map": "/wianvanniekerk.github.io/static/css/main.2606aa4f.css.map",
+    "main.bab64f9c.css.map": "/wianvanniekerk.github.io/static/css/main.bab64f9c.css.map",
     "main.ee70e5bf.js.map": "/wianvanniekerk.github.io/static/js/main.ee70e5bf.js.map",
     "787.4682e272.chunk.js.map": "/wianvanniekerk.github.io/static/js/787.4682e272.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2606aa4f.css",
+    "static/css/main.bab64f9c.css",
     "static/js/main.ee70e5bf.js"
   ]
 }
