@@ -1,173 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="coding.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
     <title>Wian van Niekerk</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="coding.png">
-    <script src="js/main.js" defer></script>
-
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-  
-        html {
-          font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }
-      </style>
-      
-</head>
-<body class="bg-cover leading-normal tracking-normal" style="background-image: url('Images/landing6.jpg');">
-
-  <!-- Navigation -->
-    <nav id="home" class="bg-gray-900 p-6">
-      <div class="container mx-auto flex items-center">
-        <img src="coding.png" alt="Icon" class="h-14 mr-2"> 
-        <a class="text-4xl items-start font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-500" href="#home">Wian van Niekerk</a>            
-            
-          <button id="mobile-open-button" class="text-3xl lg:hidden cursor-pointer text-white absolute right-6">&#9776;</button>
-          <div class="hidden lg:block space-x-8 text-xl ml-auto" aria-label="main">
-            <a class="mr-4 text-white" href="#home">Home</a>
-            <a class="mr-4 text-white" href="#about">About</a>
-            <a class="mr-4 text-white" href="#skills">Skills</a>
-            <a href="#contact" class="text-white">Contact</a>
-          </div>
-      </div>
-      <div id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center absolute right-0 text-white origin-top animate-open-menu hidden">
-        <button class="text-7xl self-end p-4">
-          &times;
-        </button>
-      <nav class="flex flex-col min-h-screen items-center py-8" aria-label="monile">
-        <a href="#home" class="w-full text-center py-6 hover:opacity-90">Home</a>
-        <a href="#about" class="w-full text-center py-6 hover:opacity-90">About</a>
-        <a href="#skills" class="w-full text-center py-6 hover:opacity-90">Skills</a>
-        <a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact</a>
-      </nav>
-    </div>
-  </nav>
-
-
-<div id="mobile-hide">
-  
-  <!-- Hero Section -->
-  <section class="py-16 p-7">
-    <div class="container mx-auto">
-      <h1 class="text-4xl font-bold mb-2">Final Year Software Engineering Student</h1>
-      <p class="text-lg">Eager to learn and passionate about software development.</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-16 p-7">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-8">About Me</h2>
-      <p class="text-lg mb-4">Learn some more about me:</p>
-
-      <div class="bg-gray-900 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
-        <div class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">
-          <p class="text-lg mb-4">I'm a final year software engineering student with a strong ability to think logically. I'm currently working part-time in Dynamics 365 Finance and Operations.</p>
-          <p class="text-lg">In the next year, I'll be a full-time employee while pursuing my part-time honours degree.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="py-16 p-7">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-8">Skills</h2>
-      <p class="text-lg mb-4">I work with the following technologies:</p>
-
-      <div class="bg-gray-900 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
-        <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <a href="https://dotnet.microsoft.com/en-us/languages/csharp" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">C#</a>
-          <a href="https://www.javascript.com/" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">JavaScript</a>
-          <a href="https://www.java.com/" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">Java</a>
-          <a href="https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">C++</a>
-          <a href="https://learn.microsoft.com/en-us/dynamicsax-2012/developer/x-language-programming-guide" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">X++</a>
-          <a href="https://html.com/" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">HTML5</a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">CSS</a>
-          <a href="https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">.NET Framework</a>
-          <a href="https://nodejs.org/en" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">NodeJS</a>
-          <a href="https://www.mongodb.com/" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">MongoDB</a>
-          <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">SQL Server</a>
-          <a href="https://www.microsoft.com/en-us/dynamics-365" class="bg-white p-4 shadow-md rounded-md leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out">Microsoft Dynamics 365</a>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 p-7">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
-      <p class="text-lg mb-4">Feel free to contact me through the form or the links below:</p>
-      
-      <form class="bg-gray-900 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
-        <div class="mb-4">
-          <label class="block text-white py-2 font-bold mb-2" for="name">
-            Name
-          </label>
-          <input class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-            id="name"
-            type="text"
-            placeholder="Wian"
-          />
-          <label class="block text-white py-2 font-bold mb-2" for="surname">
-            Surname
-          </label>
-          <input
-            class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-            id="surname"
-            type="text"
-            placeholder="van Niekerk"
-          />
-          <label class="block text-white py-2 font-bold mb-2" for="emailaddress">
-            Email
-          </label>
-          <input
-            class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-            id="emailaddress"
-            type="text"
-            placeholder="you@mail.co.za"
-          />
-          <label class="block text-white py-2 font-bold mb-2" for="number">
-            Number
-          </label>
-          <input
-            class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-            id="number"
-            type="text"
-            placeholder="+27 (00) 000-0000"
-          />
-        </div>
-
-        <div class="flex items-center justify-between pt-4">
-          <button
-            class="bg-gradient-to-r from-green-500 to-red-600 font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-            type="submit"
+  </head>
+  <body class="font-mono">
+    <!-- Header Area Start -->
+    <header id="home" class="sticky top-0 w-full z-50">
+      <nav class="flex items-center bg-white shadow h-16">
+        <div class="container__main flex items-center">
+          <a href="#home" class="mr-auto text-xl font-semibold text-sky-500"
+            >Wian van Niekerk.</a
           >
-            Submit
+          <button class="text-lg ml-5 mt-2 md:hidden">
           </button>
+          <ul class="md:flex items-center gap-7 text-sm hidden">
+            <li>
+              <a href="#home" class="hover:text-sky-500 transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="hover:text-sky-500 transition-colors"
+                >Stack</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="hover:text-sky-500 transition-colors"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-sky-500 transition-colors"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
         </div>
-      </form>
-    </div>
-      <ul class="container mx-auto flex justify-items-start">
-        <li class="mr-6"><a href="mailto:wianvanniekerk@protonmail.com" class="text-blue-500 hover:underline">Email</a></li>
-        <li class="mr-6"><a href="https://www.linkedin.com/in/wian-van-niekerk-23328b249/" class="text-blue-500 hover:underline">LinkedIn</a></li>
-        <li class="mr-6"><a href="https://github.com/wianvanniekerk" class="text-blue-500 hover:underline">GitHub</a></li>
-      </ul>
-    </div>
-  </section>
+      </nav>
+    </header>
+    <!-- Header Area End -->
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6 text-center">
-    <div class="container mx-auto">
-      <p>&copy; 2024 Wian van Niekerk. All Rights Reserved.</p>
-    </div>
-  </footer>
-</div>
-   
-</body>
+    <!-- About Us Area Start -->
+    <section id="about" class="mb-16 md:mb-0">
+      <div class="container__main">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+          <div>
+            <img src="Images/landing.jpg" alt="Hero" class="p-16 rounded-full" />
+          </div>
+          <div>
+            <h1 class="text-3xl font-semibold text-gray-800">
+              Final Year
+              <span class="text-sky-600">Software Development</span> Student At Belgium Campus
+            </h1>
+            <p class="text-gray-600 my-5">
+              Extremely motivated to develop software, solve problems logically, and to make a difference in the industry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Area End -->
+
+    <!-- Activity Area Start -->
+    <section class="mb-16">
+      <div class="container__main">
+        <div class="text-center mb-12">
+          <h3 class="text-sky-500 font-semibold text-2xl">My tech stack?</h3>
+          <p class="text-gray-600 mt-1">
+            Spans full!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+          <article class="card__hover__bg">
+            <p class="text-5xl text-sky-500">🖳</p>
+            <h3 class="text-xl font-semibold text-gray-800 my-4">
+             Front end
+            </h3>
+          </article>
+
+          <article class="card__hover__bg">
+            <p
+              class="text-5xl text-sky-500"
+            >⌨</p>
+            <h3 class="text-xl font-semibold text-gray-800 my-4">
+              Full-stack
+            </h3>
+          </article>
+
+          <article class="card__hover__bg">
+            <p class="text-5xl text-sky-500">⛃</p>
+            <h3 class="text-xl font-semibold text-gray-800 my-4">
+              Back end
+            </h3>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Activity Area End -->
+
+    <!-- Service Area Start -->
+    <section id="services" class="py-16 bg-gray-50">
+      <div class="container__main">
+        <div class="text-center mb-12">
+          <h3 class="text-sky-500 font-semibold text-2xl">
+            Skills and technologies
+          </h3>
+          <p class="text-gray-600 mt-1">
+            I specialise in the follwing:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7">
+          <article class="mx-auto service__card">
+            <div class="h-72 overflow-hidden">
+              <img
+                src="Images/code.jpg"
+                alt="Nesciunt Mete"
+                class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
+              />
+            </div>
+            <div
+              class="w-10/12 mx-auto rounded-lg bg-white opacity-90 shadow-md text-center px-5 pb-8 z-10 relative -top-24 -mb-16"
+            >
+              <div
+                class="w-20 h-20 flex justify-center items-center text-center rounded-full transition-colors duration-300 bg-sky-500 border-[6px] border-white text-white mx-auto relative -top-10 service__icon"
+              >
+                <p class="text-2xl inline-block">&lt;/&gt;</p>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 -mt-4 mb-4">
+                Coding
+              </h3>
+              <p class="text-gray-600">
+                I have written code, or worked with: C#, C++, X++, JS, Java, HTML5, CSS, SQL, NodeJS, Tailwind, and MS D365 F&O.
+              </p>
+            </div>
+          </article>
+
+          <article class="mx-auto service__card">
+            <div class="h-72 overflow-hidden">
+              <img
+                src="Images/fullstack.jpg"
+                alt="Eosle Commodi"
+                class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
+              />
+            </div>
+            <div
+              class="w-10/12 mx-auto rounded-lg bg-white opacity-90 shadow-md text-center px-5 pb-8 z-10 relative -top-24 -mb-16"
+            >
+              <div
+                class="w-20 h-20 flex justify-center items-center text-center rounded-full transition-colors duration-300 bg-sky-500 text-white border-[6px] border-white mx-auto relative -top-10 service__icon"
+              >
+                <p
+                  class="text-2xl inline-block"
+                >☰</p>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 -mt-4 mb-4">
+                Architecture
+              </h3>
+              <p class="text-gray-600">
+                From business strategy to user requirements, software design, software quality and software environment.
+              </p>
+            </div>
+          </article>
+
+          <article class="mx-auto service__card">
+            <div class="h-72 overflow-hidden">
+              <img
+                src="Images/sql.jpg"
+                alt="Velit Doloremque"
+                class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
+              />
+            </div>
+            <div
+              class="w-10/12 mx-auto rounded-lg bg-white opacity-90 shadow-md text-center px-5 pb-8 z-10 relative -top-24 -mb-16"
+            >
+              <div
+                class="w-20 h-20 flex justify-center items-center text-center rounded-full transition-colors duration-300 bg-sky-500 text-white border-[6px] border-white mx-auto relative -top-10 service__icon"
+              >
+                <p class="text-2xl inline-block">⌸</p>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 -mt-4 mb-4">
+                Databases
+              </h3>
+              <p class="text-gray-600">
+                SQL and NoSQL. I've mostly worked with relational databases, designing schemas and optimising queries. I have knowledge of data entities, normalisation, modeling and SQL proficiency. 
+              </p>
+            </div>
+          </article>
+
+          <article class="mx-auto service__card">
+            <div class="h-72 overflow-hidden">
+              <img
+                src="Images/microsoft.jpg"
+                alt="Dolori Architecto"
+                class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
+              />
+            </div>
+            <div
+              class="w-10/12 mx-auto rounded-lg bg-white opacity-90 shadow-md text-center px-5 pb-8 z-10 relative -top-24 -mb-16"
+            >
+              <div
+                class="w-20 h-20 flex justify-center items-center text-center rounded-full transition-colors duration-300 bg-sky-500 text-white border-[6px] border-white mx-auto relative -top-10 service__icon"
+              >
+                <p class="text-2xl inline-block">𝐌</p>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 -mt-4 mb-4">
+                Microsoft Dynamics 365
+              </h3>
+              <p class="text-gray-600">
+                I work part-time as an intern developer in Microsoft Dynamics 365. The company specialises in Finance and Operations. I have worked closely with some of the best developers in the industry.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Service Area End -->
+
+    <!-- Contact us Area Start -->
+    <section id="contact" class="py-16">
+      <div class="container__main grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div class="px-10 py-8 shadow border bg-gray-50">
+          <h3 class="text-sky-500 font-semibold text-2xl">Get in Touch</h3>
+          <p class="text-gray-600 mt-1">
+            Visit the links or fill in the form below!
+          </p>
+          <div class="mt-5">
+            <div class="flex gap-7 py-6 border-b">
+              <p
+                class="text-2xl inline-block text-sky-500"
+              >✉</p>
+              <div>
+                <h4 class="text-gray-600 text-lg font-semibold"><a href="mailto:wianvanniekerk@protonmail.com">Email</a></h4>
+              </div>
+            </div>
+            <div class="flex gap-7 py-6 border-b">
+              <p
+                class="text-2xl inline-block text-sky-500"
+              >☁</p>
+              <div>
+                <h4 class="text-gray-600 text-lg font-semibold"><a href="https://www.linkedin.com/in/wian-van-niekerk-23328b249/">LinkedIn</a></h4>
+              </div>
+            </div>
+            <div class="flex gap-7 py-6">
+              <p
+                class="text-2xl inline-block text-sky-500"
+              >🌏︎</p>
+              <div>
+                <h4 class="text-gray-600 text-lg font-semibold"><a href="https://github.com/wianvanniekerk">GitHub</a></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 lg:col-span-2">
+          <div class="flex justify-between flex-col sm:flex-row sm:gap-7">
+            <input
+              type="text"
+              class="input__field mb-7"
+              placeholder="Your Name"
+            />
+            <input
+              type="email"
+              class="input__field mb-7"
+              placeholder="Your Email"
+            />
+          </div>
+          <input type="text" class="input__field mb-7" placeholder="Subject" />
+          <textarea
+            class="input__field mb-7"
+            placeholder="Message"
+            rows="8"
+          ></textarea>
+          <div class="text-center">
+            <button class="rounded__btn px-10 py-3 text-base rounded">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact us Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="bg-gray-50">
+      <div class="container__main text-center py-8">
+        &copy; Copyright
+        <span class="text-sky-500 font-semibold">Wian van Niekerk.</span> all right
+        resolve.
+      </div>
+    </footer>
+    <!-- Footer Area End -->
+  </body>
 </html>
