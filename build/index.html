@@ -50,8 +50,8 @@
     </header>
     <!-- Header Area End -->
 
-    <!-- About Us Area Start -->
-    <section id="about" class="mb-16 md:mb-0">
+    <!-- Home Area Start -->
+    <section id="home" class="mb-16 md:mb-0">
       <div class="container__main">
         <div class="grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
@@ -69,10 +69,10 @@
         </div>
       </div>
     </section>
-    <!-- About Us Area End -->
+    <!-- Home Area End -->
 
-    <!-- Activity Area Start -->
-    <section class="mb-16">
+    <!-- Stack Area Start -->
+    <section id="stack" class="mb-16">
       <div class="container__main">
         <div class="text-center mb-12">
           <h3 class="text-sky-500 font-semibold text-2xl">My tech stack?</h3>
@@ -107,10 +107,10 @@
         </div>
       </div>
     </section>
-    <!-- Activity Area End -->
+    <!-- Stack Area End -->
 
-    <!-- Service Area Start -->
-    <section id="services" class="py-16 bg-gray-50">
+    <!-- Skills Area Start -->
+    <section id="skills" class="py-16 bg-gray-50">
       <div class="container__main">
         <div class="text-center mb-12">
           <h3 class="text-sky-500 font-semibold text-2xl">
@@ -126,7 +126,7 @@
             <div class="h-72 overflow-hidden">
               <img
                 src="Images/code.jpg"
-                alt="Nesciunt Mete"
+                alt="skill1"
                 class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
               />
             </div>
@@ -151,7 +151,7 @@
             <div class="h-72 overflow-hidden">
               <img
                 src="Images/fullstack.jpg"
-                alt="Eosle Commodi"
+                alt="skill2"
                 class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
               />
             </div>
@@ -178,7 +178,7 @@
             <div class="h-72 overflow-hidden">
               <img
                 src="Images/sql.jpg"
-                alt="Velit Doloremque"
+                alt="skill3"
                 class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
               />
             </div>
@@ -203,7 +203,7 @@
             <div class="h-72 overflow-hidden">
               <img
                 src="Images/microsoft.jpg"
-                alt="Dolori Architecto"
+                alt="skill4"
                 class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
               />
             </div>
@@ -226,9 +226,9 @@
         </div>
       </div>
     </section>
-    <!-- Service Area End -->
+    <!-- Skills Area End -->
 
-    <!-- Contact us Area Start -->
+    <!-- Contact Area Start -->
     <section id="contact" class="py-16">
       <div class="container__main grid grid-cols-1 lg:grid-cols-3 gap-10">
         <div class="px-10 py-8 shadow border bg-gray-50">
@@ -263,34 +263,42 @@
             </div>
           </div>
         </div>
-        <div class="col-span-1 lg:col-span-2">
+        <form onsubmit="sendEmail(); reset(); return false;" class="col-span-1 lg:col-span-2">
           <div class="flex justify-between flex-col sm:flex-row sm:gap-7">
             <input
+            id="name"
               type="text"
               class="input__field mb-7"
               placeholder="Your Name"
             />
             <input
+              id="email"
               type="email"
               class="input__field mb-7"
               placeholder="Your Email"
             />
           </div>
-          <input type="text" class="input__field mb-7" placeholder="Subject" />
+          <input
+            id="subject"
+            type="text" 
+            class="input__field mb-7" 
+            placeholder="Subject" 
+            />
           <textarea
+            id="body"
             class="input__field mb-7"
             placeholder="Message"
             rows="8"
           ></textarea>
           <div class="text-center">
-            <button class="rounded__btn px-10 py-3 text-base rounded">
+            <button type="submit" class="rounded__btn px-10 py-3 text-base rounded">
               Send Message
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </section>
-    <!-- Contact us Area End -->
+    <!-- Contact Area End -->
 
     <!-- Footer Area Start -->
     <footer class="bg-gray-50">
@@ -302,4 +310,6 @@
     </footer>
     <!-- Footer Area End -->
   </body>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="/build/js/main.js"></script>
 </html>
