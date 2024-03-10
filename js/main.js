@@ -1,43 +1,17 @@
-const initApp = () => {
-    const mobileBtn = document.getElementById('mobile-open-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileAbout = document.getElementById('mobile-hide');
-    const form = document.querySelector('form');
+const pass = process.env.Password;
 
-    const toggleMenu = () => {
-        mobileMenu.classList.toggle('hidden');
-        mobileMenu.classList.toggle('flex');
-        mobileAbout.classList.toggle('hidden');
-    }
-
-    mobileBtn.addEventListener('click', toggleMenu);
-    mobileMenu.addEventListener('click', toggleMenu);
-    
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-
-        const res = Object.fromEntries(formData);
-        const payload = JSON.stringify(res);
-        console.log(payload);
-
-        for (item of formData) {
-            console.log(item[0], item[1]);
-        };
-
-        fetch('https://httpbin.org/anything', {
-            method: "POST",
-            body: payload,
-            header: {
-                'Content-Type': 'application/json'
-            }
-        })
-            .then(res => res.json())
-            .then(res => console.log(res));
-        
-         
-    })
+function sendEmail() {
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "wianvanniekerk@protonmail.com",
+        Password : pass,
+        To : 'wianvanniekerk@protonmail.com',
+        From: 'wianvanniekerk@protonmail.com',
+        Body : document.getElementById("email").value,
+        Subject : document.getElementById("subject").value,
+        Body : "Name: " + document.getElementById("body").value +
+                "<br> Body: " + document.getElementById("body").value
+    }).then(
+      message => alert(message)
+    );
 }
-
-document.addEventListener('DOMContentLoaded', initApp)
