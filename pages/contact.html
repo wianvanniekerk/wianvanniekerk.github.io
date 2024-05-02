@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../coding.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <title>WvN - Contact</title>
+  </head>
+
+<body id="home" class="font-mono">
+    <header class="sticky top-0 w-full z-50">
+        <nav class="flex items-center bg-white shadow h-16">
+            <div class="container__main flex items-center">
+              <a href="#home" class="mr-auto text-xl font-semibold text-sky-500">Wian van Niekerk.</a>
+              <button class="text-lg ml-5 mt-2 md:hidden"></button>
+              <ul class="md:flex items-center gap-7 text-sm hidden">
+                  <li><a href="../index.html" class="hover:text-sky-500 transition-colors">Home</a></li>
+                  <li><a href="./skills.html" class="hover:text-sky-500 transition-colors">Back-end</a></li>
+                  <li><a href="./contact.html" class="hover:text-sky-500 transition-colors">Contact Me</a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contact" class="py-16">
+        <div class="container__main grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div class="px-10 py-8 shadow border bg-gray-50">
+            <h3 class="text-sky-500 font-semibold text-2xl">Get in Touch</h3>
+            <p class="text-gray-600 mt-1">
+              Visit the links or fill in the form below!
+            </p>
+            <div class="mt-5">
+              <div class="flex gap-7 py-6 border-b">
+                <p
+                  class="text-2xl inline-block text-sky-500"
+                >✉</p>
+                <div>
+                  <h4 class="text-gray-600 text-lg font-semibold"><a href="mailto:wianvanniekerk@protonmail.com">Email</a></h4>
+                </div>
+              </div>
+              <div class="flex gap-7 py-6 border-b">
+                <p
+                  class="text-2xl inline-block text-sky-500"
+                >☁</p>
+                <div>
+                  <h4 class="text-gray-600 text-lg font-semibold"><a href="https://www.linkedin.com/in/wian-van-niekerk-23328b249/">LinkedIn</a></h4>
+                </div>
+              </div>
+              <div class="flex gap-7 py-6">
+                <p
+                  class="text-2xl inline-block text-sky-500"
+                >🌏︎</p>
+                <div>
+                  <h4 class="text-gray-600 text-lg font-semibold"><a href="/build/Wian van Niekerk - CV.pdf" download="Wian-CV">CV</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form onsubmit="sendEmail(); reset(); return false;" class="col-span-1 lg:col-span-2">
+            <div class="flex justify-between flex-col sm:flex-row sm:gap-7">
+              <input
+              id="name"
+                type="text"
+                class="input__field mb-7"
+                placeholder="Your Name"
+              />
+              <input
+                id="email"
+                type="email"
+                class="input__field mb-7"
+                placeholder="Your Email"
+              />
+            </div>
+            <input
+              id="subject"
+              type="text" 
+              class="input__field mb-7" 
+              placeholder="Subject" 
+              />
+            <textarea
+              id="body"
+              class="input__field mb-7"
+              placeholder="Message"
+              rows="8"
+            ></textarea>
+            <div class="text-center">
+              <button type="submit" class="rounded__btn px-10 py-3 text-base rounded">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    
+    <footer class="bg-gray-50">
+        <object type="text/html" data="./footer.html" class="w-full"></object>
+    </footer>
+</body>
+  

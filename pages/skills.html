@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../coding.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script src="../js/hamburger.js" defer></script>
+    <script src="../js/dateTime.js" defer></script>
+    <title>WvN - Backend</title>
+  </head>
+
+<body id="home" class="font-mono">
+  <header class="sticky top-0 w-full z-50">
+    <nav class="flex items-center bg-white shadow h-16">
+      <div class="container__main flex items-center">
+        <a href="../index.html" class="mr-auto text-xl font-semibold text-sky-500">Wian van Niekerk.</a>
+        <button id="menu-icon" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">&#9776;</button>
+        <ul class="hidden md:flex items-center gap-7 text-sm" aria-label="main">
+          <li><a href="../index.html" class="hover:text-sky-500 transition-colors">Home</a></li>
+          <li><a href="./skills.html" class="hover:text-sky-500 transition-colors">Skills</a></li>
+          <li><a href="./contact.html" class="hover:text-sky-500 transition-colors">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="menu-links" class="absolute top-0 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+      <nav class="flex flex-col min-h-screen items-center py-8 text-sky-500" aria-label="mobile">
+        <a href="../index.html" class="w-full text-center py-6 hover:opacity-90">Home</a>
+        <a href="./skills.html" class="w-full text-center py-6 hover:opacity-90">Skills</a>
+        <a href="./contact.html" class="w-full text-center py-6 hover:opacity-90">Contact me</a>
+      </nav>
+    </nav>
+  </header>
+
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="container__main">
+          <div class="text-center mb-12">
+            <h3 class="text-sky-500 font-semibold text-2xl">
+              Skills and technologies
+            </h3>
+            <p class="text-gray-600 mt-1">
+              Below follows a roadmap of my experience and skills gained through different institutions, technologies and projects completed:
+            </p>
+          </div>
+  
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-7">
+            <article class="mx-auto px-5 service__card">
+              <div class="h-72 overflow-hidden">
+                <img
+                  src="../Images/code.jpg"
+                  alt="skill1"
+                  class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
+                />
+              </div>
+              <div
+                class="w-10/12 mx-auto rounded-lg bg-white opacity-90 shadow-md text-center px-5 pb-8 z-10 relative -top-24 -mb-16"
+              >
+                <div
+                  class="w-20 h-20 flex justify-center items-center text-center rounded-full transition-colors duration-300 bg-sky-500 border-[6px] border-white text-white mx-auto relative -top-10 service__icon"
+                >
+                  <p class="text-2xl inline-block">BU</p>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 -mt-4 mb-4">
+                  Bradley University
+                </h3>
+                <p class="text-gray-600">
+                  During my time at Bradley University, we mostly developed back-end applications using Java and C++. I have gained meaningful understanding of fundemental OOP principles, advanced data structures, and algorithms. We deep-dove into Computer Science topics, including Computational Theory, Discrete Mathematics, and Cryptography.
+                </p>
+              </div>
+            </article>
+  
+            <article class="mx-auto px-5 service__card">
+              <div class="h-72 overflow-hidden">
+                <img
+                  src="../Images/fullstack.jpg"
+                  alt="skill2"
+                  class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
+                />
+              </div>
+              <div
+                class="w-10/12 mx-auto rounded-lg bg-white opacity-90 shadow-md text-center px-5 pb-8 z-10 relative -top-24 -mb-16"
+              >
+                <div
+                  class="w-20 h-20 flex justify-center items-center text-center rounded-full transition-colors duration-300 bg-sky-500 text-white border-[6px] border-white mx-auto relative -top-10 service__icon"
+                >
+                  <p
+                    class="text-2xl inline-block"
+                  >BC</p>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 -mt-4 mb-4">
+                  Belgium Campus
+                </h3>
+                <p class="text-gray-600">
+                  During my time at Belgium, a hands-on learning approach was followed. Back-end development focused on C# .NET framework, Javascript, NodeJS, Python, and C++. Front-end included CSS libraries and Windows Forms. The fields of studies for the various technologies included Data Science, Web Programming, Databases, IOT, and API integration.
+                </p>
+              </div>
+            </article>
+  
+            <article class="mx-auto px-5 service__card">
+              <div class="h-72 overflow-hidden">
+                <img
+                  src="../Images/pfoLogo.png"
+                  alt="skill3"
+                  class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
+                />
+              </div>
+              <div
+                class="w-10/12 mx-auto rounded-lg bg-white opacity-90 shadow-md text-center px-5 pb-8 z-10 relative -top-24 -mb-16"
+              >
+                <div
+                  class="w-20 h-20 flex justify-center items-center text-center rounded-full transition-colors duration-300 bg-sky-500 text-white border-[6px] border-white mx-auto relative -top-10 service__icon"
+                >
+                  <p class="text-2xl inline-block">PFO</p>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 -mt-4 mb-4">
+                  Precision FinOps
+                </h3>
+                <p class="text-gray-600">
+                  I work part-time as an intern developer at Precision FinOps. We develop custom Finance and Operations solutions for clients using X++ and Microsoft Dynamics 365. Within a few months, I was able to learn the D365 environment to start applying knowledge and solve problems. From sourcing data and building scalable systems, to writing meaningful code that integrates seamlessly with the Dynamics front-end. 
+                </p>
+              </div>
+            </article>
+  
+            <article class="mx-auto px-5 service__card">
+              <div class="h-72 overflow-hidden">
+                <img
+                  src="../Images/side.jpg"
+                  alt="skill4"
+                  class="h-full w-full rounded-lg transition-transform duration-300 object-cover"
+                />
+              </div>
+              <div
+                class="w-10/12 mx-auto rounded-lg bg-white opacity-90 shadow-md text-center px-5 pb-8 z-10 relative -top-24 -mb-16"
+              >
+                <div
+                  class="w-20 h-20 flex justify-center items-center text-center rounded-full transition-colors duration-300 bg-sky-500 text-white border-[6px] border-white mx-auto relative -top-10 service__icon"
+                >
+                  <p class="text-2xl inline-block">WvN</p>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 -mt-4 mb-4">
+                  Side-Projects
+                </h3>
+                <p class="text-gray-600">
+                  During my free time, I build software to discover my limitations and to continously learn new technologies. These include NextJS, Express, React, and Tailwindcss. Some real-world applications I have worked on: <a href="https://www.wianvanniekerk.co.za" target="_blank" class="text-sky-500">Portfolio</a>, <a href="https://pfosolutions.com" target="_blank" class="text-sky-500">Precision F FinOps</a>, Python web-scraper, chatbot with OpenAI's API, and a Freelancing Service application *Still in progress as of<p id="datetime" class="text-sky-500"></p>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-gray-50">
+        <div class="container__main text-center py-8">
+            &copy; Copyright
+            <span class="text-sky-500 font-semibold">Wian van Niekerk.</span> all rights
+            reserved.
+        </div>
+      </footer>
+</body>
