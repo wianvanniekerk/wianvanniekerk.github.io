@@ -9,7 +9,6 @@ const options = {
     buttonColorLight: '#fff',
     saveInCookies: true, 
     label: '🌓',
-    autoMatchOsTheme: true
   }
 
   const darkmode = new Darkmode(options);
