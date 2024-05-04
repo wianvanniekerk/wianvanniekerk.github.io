@@ -6,23 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../coding.png" type="image/x-icon"/>
     <link rel="stylesheet" href="../css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <title>WvN - Contact</title>
   </head>
 
 <body id="home" class="font-mono">
-    <header class="sticky top-0 w-full z-50">
-        <nav class="flex items-center bg-white shadow h-16">
-            <div class="container__main flex items-center">
-              <a href="#home" class="mr-auto text-xl font-semibold text-sky-500">Wian van Niekerk.</a>
-              <button class="text-lg ml-5 mt-2 md:hidden"></button>
-              <ul class="md:flex items-center gap-7 text-sm hidden">
-                  <li><a href="../index.html" class="hover:text-sky-500 transition-colors">Home</a></li>
-                  <li><a href="./skills.html" class="hover:text-sky-500 transition-colors">Back-end</a></li>
-                  <li><a href="./contact.html" class="hover:text-sky-500 transition-colors">Contact Me</a></li>
-              </ul>
-            </div>
-        </nav>
-    </header>
+  <header class="sticky top-0 w-full z-50">
+    <nav class="flex items-center bg-white shadow h-16">
+      <div class="container__main flex items-center">
+        <a href="../index.html" class="mr-auto text-xl font-semibold text-sky-500">Wian van Niekerk.</a>
+        <button id="menu-icon" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">&#9776;</button>
+        <ul class="hidden md:flex items-center gap-7 text-sm" aria-label="main">
+          <li><a href="../index.html" class="hover:text-sky-500 transition-colors">Home</a></li>
+          <li><a href="./skills.html" class="hover:text-sky-500 transition-colors">Skills</a></li>
+          <li><a href="./contact.html" class="hover:text-sky-500 transition-colors">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="menu-links" class="absolute top-0 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+
+      <nav class="flex flex-col min-h-screen bg-white items-center py-8 text-sky-500" aria-label="mobile">
+        <button class="text-8xl text-gray-800 self-end px-6">&times;</button>
+        <a href="../index.html" class="w-full text-center py-6 hover:opacity-90">Home</a>
+        <a href="./skills.html" class="w-full text-center py-6 hover:opacity-90">Skills</a>
+        <a href="./contact.html" class="w-full text-center py-6 hover:opacity-90">Contact me</a>
+      </nav>
+    </nav>
+  </header>
 
     <section id="contact" class="py-16">
         <div class="container__main grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -58,31 +68,31 @@
               </div>
             </div>
           </div>
-          <form onsubmit="sendEmail(); reset(); return false;" class="col-span-1 lg:col-span-2">
+          <form action="https://formsubmit.co/1f88cd710d1a244ca7a447fa381d3688" target="_blank" method="POST" class="col-span-1 lg:col-span-2">
             <div class="flex justify-between flex-col sm:flex-row sm:gap-7">
               <input
-              id="name"
-                type="text"
+                type="name"
+                name="name"
                 class="input__field mb-7"
                 placeholder="Your Name"
               />
               <input
-                id="email"
                 type="email"
+                name="email"
                 class="input__field mb-7"
                 placeholder="Your Email"
               />
             </div>
             <input
-              id="subject"
               type="text" 
+              name="subject"
               class="input__field mb-7" 
               placeholder="Subject" 
               />
             <textarea
-              id="body"
+              name="Message"
               class="input__field mb-7"
-              placeholder="Message"
+              placeholder="message"
               rows="8"
             ></textarea>
             <div class="text-center">
@@ -98,4 +108,6 @@
         <object type="text/html" data="./footer.html" class="w-full"></object>
     </footer>
 </body>
+<script src="../js/dark.js"></script>
+<script src="../js/hamburger.js"></script>
   
