@@ -1,7 +1,7 @@
 const options = {
-    bottom: '64px',
+    bottom: '3px',
     right: 'unset',
-    left: '32px',
+    left: '3px',
     time: '0.5s',
     mixColor: '#f0fff1',
     backgroundColor: '#fff',
