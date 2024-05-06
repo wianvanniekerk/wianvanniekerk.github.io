@@ -770,10 +770,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -886,10 +882,6 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .gap-7 {
@@ -1234,4 +1226,3 @@ video {
     padding-right: 5rem;
   }
 }
-  
