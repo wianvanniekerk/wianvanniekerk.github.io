@@ -72,12 +72,14 @@
           <form action="https://formsubmit.co/1f88cd710d1a244ca7a447fa381d3688" target="_blank" method="POST" class="col-span-1 lg:col-span-2">
             <div class="flex justify-between flex-col sm:flex-row sm:gap-7">
               <input
+                id="name"
                 type="name"
                 name="name"
                 class="input__field mb-7"
                 placeholder="Your Name"
               />
               <input
+                id="email"
                 type="email"
                 name="email"
                 class="input__field mb-7"
@@ -85,19 +87,21 @@
               />
             </div>
             <input
+              id="subject"
               type="text" 
               name="subject"
               class="input__field mb-7" 
               placeholder="Subject" 
               />
             <textarea
+              id="message"
               name="Message"
               class="input__field mb-7"
               placeholder="message"
               rows="8"
             ></textarea>
             <div class="text-center">
-              <button type="submit" class="rounded__btn px-10 py-3 text-base rounded">
+              <button id="submit" type="submit" class="rounded__btn px-10 py-3 text-base rounded">
                 Send Message
               </button>
             </div>
@@ -113,6 +117,7 @@
         </div>
       </footer>
 </body>
+<script src="../js/contact.js"></script>
 <script src="../js/dark.js"></script>
 <script src="../js/hamburger.js"></script>
   
