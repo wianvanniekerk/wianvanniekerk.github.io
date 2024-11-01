@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="coding.png" type="image/x-icon"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>WvN - Home</title>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
   </head>
 
-<body class="font-mono flex flex-col min-h-svh">
+<body class="black font-mono flex flex-col min-h-svh">
   <header class="sticky top-0 w-full z-50">
-    <nav class="flex items-center bg-white shadow h-16">
+    <nav class="black flex items-center bg-white shadow h-16">
         <div class="container__main flex items-center">
             <a href="./index.html" class="mr-auto text-xl font-semibold text-sky-500">Wian van Niekerk.</a>
             <button id="menu-icon" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">&#9776;</button>
             <ul class="hidden md:flex items-center gap-7 text-sm" aria-label="main">
-                <li><a href="../index.html" class="hover:text-sky-500 transition-colors">Home</a></li>
-                <li><a href="./pages/about.html" class="hover:text-sky-500 transition-colors">About me</a></li>
-                <li><a href="./pages/skills.html" class="hover:text-sky-500 transition-colors">Skills</a></li>
-                <li><a href="./pages/contact.html" class="hover:text-sky-500 transition-colors">Contact Me</a></li>
+                <li><a href="./index.html" class="white hover:text-sky-500 transition-colors">Home</a></li>
+                <li><a href="./pages/about.html" class="white hover:text-sky-500 transition-colors">About me</a></li>
+                <li><a href="./pages/skills.html" class="white hover:text-sky-500 transition-colors">Skills</a></li>
+                <li><a href="./pages/contact.html" class="white hover:text-sky-500 transition-colors">Contact Me</a></li>
             </ul>
         </div>
     </nav>
@@ -35,7 +35,10 @@
     </nav>
 </header>
 
-<section id="home" class="mb-16 md:mb-0">
+<section class="mb-16 md:mb-0">
+  <button id="darkToggle" type="submit" class="px-6 py-6 text-xl hover:text-sky-500 transition-colors">
+    <i class="text-4xl fa-solid fa-moon"></i>
+  </button>
   <div class="container__main">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center">
       <div class="flex justify-center md:justify-end">
@@ -44,11 +47,11 @@
         </div>
       </div>
       <div>
-        <h1 class="text-3xl font-semibold text-gray-800">
+        <h1 class="white text-3xl font-semibold text-gray-800">
           Final Year
           <span class="text-sky-600">Software Development</span> Student At Belgium Campus
         </h1>
-        <p class="text-gray-600 my-5">
+        <p class="gray text-gray-600 my-5">
           Extremely motivated to develop software, analyse data, solve problems logically, and to make a difference in the industry.
         </p>
       </div>
@@ -57,51 +60,48 @@
 </section>
 
 
-    <section id="stack" class="mb-16">
-      <div class="container__main">
-        <div class="text-center mb-12">
-          <h3 class="text-sky-500 font-semibold text-2xl">My tech stack?</h3>
-          <p class="text-gray-600 mt-1">
-            Spans full!
-          </p>
-        </div>
+<section class="mb-16">
+  <div class="container__main">
+    <div class="text-center mb-12">
+      <h3 class="text-sky-500 font-semibold text-2xl">My tech stack?</h3>
+      <p class="gray text-gray-600 mt-1">
+        Spans full!
+      </p>
+    </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
-          <a href="./pages/frontend.html" class="card__hover__bg">
-            <p class="text-5xl text-sky-500">✎</p>
-            <h3 class="text-xl font-semibold text-gray-800 my-4">
-             Front end
-            </h3>
-          </a>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+      <a href="./pages/frontend.html" class="darkGray card__hover__bg">
+        <p class="text-5xl text-sky-500">✎</p>
+        <h3 class="white text-xl font-semibold text-gray-800 my-4">
+          Front end
+        </h3>
+      </a>
 
-          <a href="./pages/databases.html" class="card__hover__bg">
-            <p
-              class="text-5xl text-sky-500"
-            >⛃</p>
-            <h3 class="text-xl font-semibold text-gray-800 my-4">
-              Databases
-            </h3>
-          </a>
+      <a href="./pages/databases.html" class="darkGray card__hover__bg">
+        <p class="text-5xl text-sky-500">⛃</p>
+          <h3 class="white text-xl font-semibold text-gray-800 my-4">
+            Databases
+          </h3>
+      </a>
 
-          <a href="./pages/backend.html" class="card__hover__bg">
-            <p class="text-5xl text-sky-500">⌨</p>
-            <h3 class="text-xl font-semibold text-gray-800 my-4">
-              Back end
-            </h3>
-          </a>
-        </div>
-      </div>
-    </section>    
+      <a href="./pages/backend.html" class="darkGray card__hover__bg">
+        <p class="text-5xl text-sky-500">⌨</p>
+        <h3 class="white text-xl font-semibold text-gray-800 my-4">
+          Back end
+        </h3>
+      </a>
+    </div>
+  </div>
+</section>    
 
-    <footer class="bg-gray-50">
-      <div class="container__main text-center py-8">
-          &copy; Copyright
-          <span class="text-sky-500 font-semibold">Wian van Niekerk.</span> all rights
-          reserved.
-      </div>
-    </footer>
+<footer class="black bg-gray-50">
+  <div class="white container__main text-center py-8">
+    &copy; Copyright
+    <span class="text-sky-500 font-semibold">Wian van Niekerk.</span> all rights reserved.
+  </div>
+</footer>
 
-  </body>
-  <script src="js/hamburger.js"></script>
-  <script src="js/dark.js"></script>
+</body>
+<script src="js/hamburger.js"></script>
+<script src="js/dark.js"></script>
 </html>

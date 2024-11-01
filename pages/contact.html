@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../coding.png" type="image/x-icon"/>
     <link rel="stylesheet" href="../css/style.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>WvN - Contact</title>
   </head>
 
-<body id="home" class="font-mono">
+<body id="home" class="black font-mono">
   <header class="sticky top-0 w-full z-50">
-    <nav class="flex items-center bg-white shadow h-16">
+    <nav class="black flex items-center bg-white shadow h-16">
         <div class="container__main flex items-center">
             <a href="../index.html" class="mr-auto text-xl font-semibold text-sky-500">Wian van Niekerk.</a>
             <button id="menu-icon" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">&#9776;</button>
             <ul class="hidden md:flex items-center gap-7 text-sm" aria-label="main">
-                <li><a href="../index.html" class="hover:text-sky-500 transition-colors">Home</a></li>
-                <li><a href="./about.html" class="hover:text-sky-500 transition-colors">About me</a></li>
-                <li><a href="./skills.html" class="hover:text-sky-500 transition-colors">Skills</a></li>
-                <li><a href="./contact.html" class="hover:text-sky-500 transition-colors">Contact Me</a></li>
+                <li class="white"><a href="../index.html" class="hover:text-sky-500 transition-colors">Home</a></li>
+                <li class="white"><a href="./about.html" class="hover:text-sky-500 transition-colors">About me</a></li>
+                <li class="white"><a href="./skills.html" class="hover:text-sky-500 transition-colors">Skills</a></li>
+                <li class="white"><a href="./contact.html" class="hover:text-sky-500 transition-colors">Contact Me</a></li>
             </ul>
         </div>
     </nav>
     <nav id="menu-links" class="absolute top-0 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
-      <nav class="flex flex-col min-h-screen bg-white items-center py-8 text-sky-500" aria-label="mobile">
-        <button class="text-8xl text-gray-800 self-end px-6">&times;</button>
+      <nav class="black flex flex-col min-h-screen bg-white items-center py-8 text-sky-500" aria-label="mobile">
+        <button class="white text-8xl text-gray-800 self-end px-6">&times;</button>
         <a href="../index.html" class="w-full text-center py-6 hover:opacity-90">Home</a>
         <a href="./about.html" class="w-full text-center py-6 hover:opacity-90">About me</a>
         <a href="./skills.html" class="w-full text-center py-6 hover:opacity-90">Skills</a>
@@ -35,36 +35,47 @@
     </nav>
 </header>
 
-    <section id="contact" class="py-16">
+<button id="darkToggle" type="submit" class="px-6 py-6 text-xl hover:text-sky-500 transition-colors">
+  <i class="text-4xl fa-solid fa-moon"></i>
+</button>
+    <section id="contact" class="py-8">
         <div class="container__main grid grid-cols-1 lg:grid-cols-3 gap-10">
-          <div class="px-10 py-8 shadow border bg-gray-50">
+          <div class="darkGray px-10 py-8 shadow border bg-gray-50">
             <h3 class="text-sky-500 font-semibold text-2xl">Get in Touch</h3>
-            <p class="text-gray-600 mt-1">
+            <p class="gray text-gray-600 mt-1">
               Visit the links or fill in the form below!
             </p>
             <div class="mt-5">
               <div class="flex gap-7 py-6 border-b">
                 <p
                   class="text-2xl inline-block text-sky-500"
-                >✉</p>
+                ><i class="fa-solid fa-envelope"></i></p>
                 <div>
-                  <h4 class="text-gray-600 text-lg font-semibold"><a href="mailto:wianvanniekerk@protonmail.com">Email</a></h4>
+                  <h4 class="gray text-gray-600 text-lg font-semibold"><a href="mailto:wianvanniekerk@protonmail.com">Email</a></h4>
                 </div>
               </div>
               <div class="flex gap-7 py-6 border-b">
                 <p
                   class="text-2xl inline-block text-sky-500"
-                >☁</p>
+                ><i class="fa-brands fa-linkedin"></i></p>
                 <div>
-                  <h4 class="text-gray-600 text-lg font-semibold"><a href="https://www.linkedin.com/in/wian-van-niekerk-23328b249/" target="_blank">LinkedIn</a></h4>
+                  <h4 class="gray text-gray-600 text-lg font-semibold"><a href="https://www.linkedin.com/in/wian-van-niekerk-23328b249/" target="_blank">LinkedIn</a></h4>
+                </div>
+              </div>
+              <div class="flex gap-7 py-6 border-b">
+                <p
+                  class="text-2xl inline-block text-sky-500"
+                ><i class="fas fa-file-alt"></i></p>
+                <div>
+                  <h4 class="gray text-gray-600 text-lg font-semibold"><a href="https://wianvanniekerk-github-io.onrender.com/Wian van Niekerk - CV.pdf" target="_blank" download="Wian-CV">CV</a></h4>
                 </div>
               </div>
               <div class="flex gap-7 py-6">
                 <p
                   class="text-2xl inline-block text-sky-500"
-                >◪</p>
+                ><i class="fa-brands fa-github"></i></p>
                 <div>
-                  <h4 class="text-gray-600 text-lg font-semibold"><a href="https://wianvanniekerk-github-io.onrender.com/Wian van Niekerk - CV.pdf" target="_blank" download="Wian-CV">CV</a></h4>
+                  <h4 class="gray text-gray-600 text-lg font-semibold"><a href="https://github.com/wianvanniekerk" target="_blank" download="Wian-CV">GitHub</a></h4>
                 </div>
               </div>
             </div>
@@ -75,14 +86,14 @@
                 id="name"
                 type="name"
                 name="name"
-                class="input__field mb-7"
+                class="darkGray input__field mb-7"
                 placeholder="Your Name"
               />
               <input
                 id="email"
                 type="email"
                 name="email"
-                class="input__field mb-7"
+                class="darkGray input__field mb-7"
                 placeholder="Your Email"
               />
             </div>
@@ -90,15 +101,15 @@
               id="subject"
               type="text" 
               name="subject"
-              class="input__field mb-7" 
+              class="darkGray input__field mb-7" 
               placeholder="Subject" 
               />
             <textarea
               id="message"
               name="Message"
-              class="input__field mb-7"
+              class="darkGray input__field mb-7"
               placeholder="message"
-              rows="8"
+              rows="10"
             ></textarea>
             <div class="text-center">
               <button id="submit" type="submit" class="rounded__btn px-10 py-3 text-base rounded">
@@ -109,8 +120,8 @@
         </div>
       </section>
     
-      <footer class="bg-gray-50">
-        <div class="container__main text-center py-8">
+      <footer class="black bg-gray-50">
+        <div class="white container__main text-center py-8">
             &copy; Copyright
             <span class="text-sky-500 font-semibold">Wian van Niekerk.</span> all rights
             reserved.

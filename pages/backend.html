@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../coding.png" type="image/x-icon"/>
     <link rel="stylesheet" href="../css/style.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>WvN - Backend</title>
   </head>
 
-<body id="home" class="font-mono">
+<body id="home" class="black font-mono">
     <header class="sticky top-0 w-full z-50">
-        <nav class="flex items-center bg-white shadow h-16">
+        <nav class="black flex items-center bg-white shadow h-16">
             <div class="container__main flex items-center">
                 <a href="../index.html" class="mr-auto text-xl font-semibold text-sky-500">Wian van Niekerk.</a>
                 <button id="menu-icon" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">&#9776;</button>
                 <ul class="hidden md:flex items-center gap-7 text-sm" aria-label="main">
-                    <li><a href="../index.html" class="hover:text-sky-500 transition-colors">Home</a></li>
-                    <li><a href="./about.html" class="hover:text-sky-500 transition-colors">About me</a></li>
-                    <li><a href="./skills.html" class="hover:text-sky-500 transition-colors">Skills</a></li>
-                    <li><a href="./contact.html" class="hover:text-sky-500 transition-colors">Contact Me</a></li>
+                    <li class="white"><a href="../index.html" class="hover:text-sky-500 transition-colors">Home</a></li>
+                    <li class="white"><a href="./about.html" class="hover:text-sky-500 transition-colors">About me</a></li>
+                    <li class="white"><a href="./skills.html" class="hover:text-sky-500 transition-colors">Skills</a></li>
+                    <li class="white"><a href="./contact.html" class="hover:text-sky-500 transition-colors">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
         <nav id="menu-links" class="absolute top-0 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
-            <nav class="flex flex-col min-h-screen bg-white items-center py-8 text-sky-500" aria-label="mobile">
-                <button class="text-8xl text-gray-800 self-end px-6">&times;</button>
+            <nav class="black flex flex-col min-h-screen bg-white items-center py-8 text-sky-500" aria-label="mobile">
+                <button class="white text-8xl text-gray-800 self-end px-6">&times;</button>
                 <a href="../index.html" class="w-full text-center py-6 hover:opacity-90">Home</a>
                 <a href="./about.html" class="w-full text-center py-6 hover:opacity-90">About me</a>
                 <a href="./skills.html" class="w-full text-center py-6 hover:opacity-90">Skills</a>
@@ -35,52 +35,55 @@
         </nav>
     </header>
 
-  <section id="skills" class="py-16 min-h-screen md:min-h-0 md:min-h-80">
+  <button id="darkToggle" type="submit" class="px-6 py-6 text-xl hover:text-sky-500 transition-colors">
+    <i class="text-4xl fa-solid fa-moon"></i>
+  </button>
+  <section id="skills" class="py-8 min-h-screen md:min-h-0 md:min-h-80">
     <div class="container__main mx-auto lg:px-12 xl:px-20">
       <div class="text-center mb-12">
         <h3 class="text-sky-500 font-semibold text-2xl">Back-end</h3>
-        <p class="text-gray-600 mt-1">I have the following back-end skills:</p>
+        <p class="gray text-gray-600 mt-1">I have the following back-end skills:</p>
       </div>  
   
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16">
         <div class="mx-auto px-5 service__card border border-gray-300 rounded-lg px-4 py-3">
           <h4 class="text-sky-500 font-semibold mb-2">System Architecture</h4>
-          <p class="text-gray-600">
+          <p class="gray text-gray-600">
             Designed efficient, flexible, and scalable backend architectures for optimal performance and reliability.
           </p>
         </div>
   
         <div class="mx-auto px-5 service__card border border-gray-300 rounded-lg px-4 py-3">
           <h4 class="text-sky-500 font-semibold mb-2">Database Management</h4>
-          <p class="text-gray-600">
+          <p class="gray text-gray-600">
             Hands-on experience with various database technologies to ensure data integrity and optimised performance.
           </p>
         </div>
   
         <div class="mx-auto px-5 service__card border border-gray-300 rounded-lg px-4 py-3">
           <h4 class="text-sky-500 font-semibold mb-2">API Development</h4>
-          <p class="text-gray-600">
+          <p class="gray text-gray-600">
             Built secure APIs to integrate communication between front-end and back-end environments.
           </p>
         </div>
   
         <div class="mx-auto px-5 service__card border border-gray-300 rounded-lg px-4 py-3">
           <h4 class="text-sky-500 font-semibold mb-2">Interoperability</h4>
-          <p class="text-gray-600">
+          <p class="gray text-gray-600">
             Ensure smooth data exchange between systems, including third-party integrations for various business processes.
           </p>
         </div>
   
         <div class="mx-auto px-5 service__card border border-gray-300 rounded-lg px-4 py-3">
           <h4 class="text-sky-500 font-semibold mb-2">Performance Optimisation</h4>
-          <p class="text-gray-600">
+          <p class="gray text-gray-600">
             Experience in optimising back-end systems for efficiency, including database queries, and code execution.
           </p>
         </div>
   
         <div class="mx-auto px-5 service__card border border-gray-300 rounded-lg px-4 py-3">
           <h4 class="text-sky-500 font-semibold mb-2">Version Control</h4>
-          <p class="text-gray-600">
+          <p class="gray text-gray-600">
             Proficient in using version control systems like Git to manage codebases, collaborate with team members, and track changes.
           </p>
         </div>  
@@ -91,18 +94,18 @@
   <section id="stack" class="mb-16">
     <div class="container__main">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
-        <a href="./frontend.html" class="card__hover__bg">
+        <a href="./frontend.html" class="darkGray card__hover__bg">
           <p class="text-5xl text-sky-500">✎</p>
-          <h3 class="text-xl font-semibold text-gray-800 my-4">
+          <h3 class="white text-xl font-semibold text-gray-800 my-4">
            Front end
           </h3>
         </a>
 
-        <a href="./databases.html" class="card__hover__bg">
+        <a href="./databases.html" class="darkGray card__hover__bg">
           <p
             class="text-5xl text-sky-500"
           >⛃</p>
-          <h3 class="text-xl font-semibold text-gray-800 my-4">
+          <h3 class="white text-xl font-semibold text-gray-800 my-4">
             Databases
           </h3>
         </a>
@@ -111,8 +114,8 @@
     </div>
   </section>  
   
-    <footer class="bg-gray-50">
-        <div class="container__main text-center py-8">
+    <footer class="black bg-gray-50">
+        <div class="white container__main text-center py-8">
             &copy; Copyright
             <span class="text-sky-500 font-semibold">Wian van Niekerk.</span> all rights reserved.
         </div>
@@ -120,4 +123,3 @@
 </body>
 <script src="../js/dark.js"></script>
 <script src="../js/hamburger.js"></script>
-  
